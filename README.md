@@ -41,7 +41,16 @@ This script is designed to load PDF documents into a Chroma vector store allowin
 
 #### Update
 - Run the script and enter `U` when prompted to update the existing database with new data.
-- The script will add the new data to the existing Chroma database.
+- The script will add the new data to the existing Chroma database
+
+### 4.4 Functions
+- `Chroma.from_documents`: Creates a Chroma vectorstore from the provided documents.
+![](assets/snippets/generate.png "LangChain Architecture Overview")
+- `PyPDFLoader.load`: Loads the documents from the specified PDF file.
+![](assets/snippets/retrieve.png "LangChain Architecture Overview")
+- `RecursiveCharacterTextSplitter.split_documents`: Splits the loaded documents into smaller chunks for better processing.
+![](assets/snippets/generate_answer.png "LangChain Architecture Overview")
+
 
 ## 4. AI Assistant Application (`ui.py`)
 ### 4.1 Overview
@@ -67,5 +76,7 @@ Get API key [here](https://ai.google.dev/gemini-api/docs/api-key).
 - `generate_rag_prompt`: Generates a Retrieval-Augmented Generation (RAG) prompt using the user query and context.
 ![](assets/snippets/generate.png "LangChain Architecture Overview")
 - `get_relevant_context_from_db`: Fetches relevant context from the Chroma database based on the user query.
+![](assets/snippets/retrieve.png "LangChain Architecture Overview")
 - `generate_answer`: Generates an answer using the Generative AI model from Google.
+![](assets/snippets/generate_answer.png "LangChain Architecture Overview")
 
