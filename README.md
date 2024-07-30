@@ -65,7 +65,7 @@ Get API key [here](https://ai.google.dev/gemini-api/docs/api-key).
 
 ### 4.4 Functions
 - `generate_rag_prompt`: Generates a Retrieval-Augmented Generation (RAG) prompt using the user query and context.
-![](assets/logo_dark.png "LangChain Architecture Overview")
+![](assets/snippets/generate.png "LangChain Architecture Overview")
 - `get_relevant_context_from_db`: Fetches relevant context from the Chroma database based on the user query.
 - `generate_answer`: Generates an answer using the Generative AI model from Google.
 
