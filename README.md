@@ -43,7 +43,7 @@ This script is designed to load PDF documents into a Chroma vector store allowin
 - Run the script and enter `U` when prompted to update the existing database with new data.
 - The script will add the new data to the existing Chroma database
 
-### 4.4 Functions
+### 3.4 Functions
 - `Chroma.from_documents`: Creates a Chroma vectorstore from the provided documents.
 ![](assets/snippets/generate.png "LangChain Architecture Overview")
 - `PyPDFLoader.load`: Loads the documents from the specified PDF file.
