@@ -30,6 +30,7 @@ This script is designed to load PDF documents into a Chroma vector store allowin
 ### 3.2 Requirements
 - Python 3.8+
 - `langchain-community` library
+  -	`langchain_chromaBD`documentation: [here](https://python.langchain.com/v0.2/docs/integrations/vectorstores/chroma/)
 - `langchain-huggingface` library
 - `PyPDFLoader` library
 - `sentence-transformers` library
@@ -45,11 +46,11 @@ This script is designed to load PDF documents into a Chroma vector store allowin
 
 ### 3.4 Functions
 - `Chroma.from_documents`: Creates a Chroma vectorstore from the provided documents.
-![](assets/snippets/generate.png "LangChain Architecture Overview")
+![](assets/snippets/embedding_vectorstore.png "LangChain Architecture Overview")
 - `PyPDFLoader.load`: Loads the documents from the specified PDF file.
-![](assets/snippets/retrieve.png "LangChain Architecture Overview")
+![](assets/snippets/pydfloader.png "LangChain Architecture Overview")
 - `RecursiveCharacterTextSplitter.split_documents`: Splits the loaded documents into smaller chunks for better processing.
-![](assets/snippets/generate_answer.png "LangChain Architecture Overview")
+![](assets/snippets/textsplitter.png "LangChain Architecture Overview")
 
 
 ## 4. AI Assistant Application (`ui.py`)
