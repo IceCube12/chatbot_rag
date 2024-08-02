@@ -10,6 +10,7 @@
   - Overview
   - Requirements
   - Usage
+  - models
   - Functions
 
 ## 1. Installing Requirements
@@ -68,12 +69,18 @@ This application is a helpful and informative bot that answers questions using t
 
 Get API key [here](https://ai.google.dev/gemini-api/docs/api-key).
 
-### 4.3 Usage
+### 4.3 Models used
+- embedding model: `sentence-transformers/all-MiniLM-L6-v2`
+  - [documentation](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+- llm model: `gemini-1.5-flash`
+  - [documentation](https://ai.google.dev/#gemini-api)
+
+### 4.4 Usage
 - Run the application using `streamlit run ui.py`.
 - Enter a question in the input field and click the "Ask" button.
 - The bot will retrieve relevant context from the Chroma database and generate an answer using the generative AI model.
 
-### 4.4 Functions
+### 4.5 Functions
 - `generate_rag_prompt`: Generates a Retrieval-Augmented Generation (RAG) prompt using the user query and context.
 ![](assets/snippets/generate.png "LangChain Architecture Overview")
 - `get_relevant_context_from_db`: Fetches relevant context from the Chroma database based on the user query.
